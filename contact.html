@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Επικοινωνία | Προσωπική Ιστοσελίδα</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">VX</div>
+        <div>
+          <p class="brand-title" style="margin:0; font-weight:800;">Βασίλειος Ξενίδης</p>
+          <p class="brand-subtitle">Junior Developer • IT Support • Portfolio</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Κύρια πλοήγηση">
+        <a class="nav-link" href="index.html">Αρχική</a>
+        <a class="nav-link" href="cv.html">Βιογραφικό</a>
+        <a class="nav-link active" href="contact.html">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h2>Επικοινωνία</h2>
+        <p class="muted">Στείλε μου το μήνυμά σου</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <section class="panel" aria-label="Φόρμα επικοινωνίας">
+          <h3 class="panel-title">Φόρμα Επικοινωνίας</h3>
+
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="fullName">Ονοματεπώνυμο</label>
+              <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                required
+                minlength="3"
+                maxlength="60"
+                placeholder="π.χ. Βασίλης Ξενίδης"
+                title="Παρακαλώ εισάγετε ονοματεπώνυμο (τουλάχιστον 3 χαρακτήρες)."
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="name@example.com"
+                title="Παρακαλώ εισάγετε έγκυρη διεύθυνση email."
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">Τηλέφωνο (required)</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                inputmode="tel"
+                pattern="(\\+30\s?)?6\\d{9}"
+                placeholder="π.χ. +30 69XXXXXXXXX"
+                title="Δώστε κινητό Ελλάδας: 69XXXXXXXXX (προαιρετικά με +30)."
+              />
+              <p class="help">Παράδειγμα: 6912345678 ή +30 6912345678</p>
+            </div>
+
+            <div class="field">
+              <label for="subject">Θέμα</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                required
+                minlength="3"
+                maxlength="80"
+                placeholder="π.χ. Συνεργασία / Ερώτηση"
+                title="Το θέμα πρέπει να έχει τουλάχιστον 3 χαρακτήρες."
+              />
+            </div>
+
+            <div class="field">
+              <label for="message">Μήνυμα</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="10"
+                maxlength="1000"
+                placeholder="Γράψτε εδώ το μήνυμά σας..."
+                title="Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες."
+              ></textarea>
+            </div>
+
+            <div class="field field-inline">
+              <input id="consent" name="consent" type="checkbox" required />
+              <label for="consent">Αποδέχομαι την επεξεργασία των στοιχείων μου για σκοπούς επικοινωνίας.</label>
+            </div>
+
+            <button class="btn" type="submit">Αποστολή</button>
+          </form>
+        </section>
+
+        <aside class="panel" aria-label="Στοιχεία και χάρτης">
+          <h3 class="panel-title">Στοιχεία</h3>
+
+          <ul class="list">
+            <li><strong>Email:</strong> billyibl@yahoo.gr</li>
+            <li><strong>Τηλέφωνο:</strong> +30 6983522834</li>
+            <li><strong>Διεύθυνση:</strong> Παναγούλη 214, Λάρισα</li>
+            <li><strong>Ώρες:</strong> Δευ–Παρ 10:00–18:00</li>
+          </ul>
+
+          <hr class="hr" />
+
+          <h4 class="kicker">Χάρτης</h4>
+          <div class="map" aria-label="Στατικός χάρτης">
+            <iframe
+              title="Χάρτης"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11121.420184176282!2d22.41825546826173!3d39.64088399765922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sel!2sgr!4v1767814839712!5m2!1sel!2sgr" 
+              allowfullscreen=""
+            ></iframe>
+          </div> 
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Στοιχεία Επικοινωνίας</p>
+        <p class="muted">Email: billyibl@yahoo.gr<br />Τηλέφωνο: +30 6983522834<br />Διεύθυνση: Παναγούλη 214, Λάρισα</p>
+      </div>
+      <div>
+        <p class="footer-title">Σύνδεσμοι</p>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Δικαιώματα</p>
+        <p class="muted">© 2025 — Όλα τα δικαιώματα διατηρούνται.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
